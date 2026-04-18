@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service - n8n Job Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --teal: #01696f; --teal-light: #e6f2f2; --teal-dark: #0c4e54;
+      --text: #1a1a2e; --text-muted: #6b7280; --bg: #f8fafa;
+      --surface: #ffffff; --border: #e2e8ea;
+    }
+    body { font-family: "Inter", sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; line-height: 1.7; }
+    .hero { background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 60%, #1a8a91 100%); padding: 3rem 1.5rem 4rem; text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content:""; position:absolute; top:-60px; right:-60px; width:220px; height:220px; background:rgba(255,255,255,0.05); border-radius:50%; }
+    .hero::after  { content:""; position:absolute; bottom:-80px; left:-40px; width:300px; height:300px; background:rgba(255,255,255,0.04); border-radius:50%; }
+    .logo-wrap { display:inline-flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem; }
+    .logo-img { width:52px; height:52px; border-radius:14px; background:white; padding:6px; box-shadow:0 4px 16px rgba(0,0,0,0.2); }
+    .logo-text { font-size:1.4rem; font-weight:700; color:white; letter-spacing:-0.02em; }
+    .hero h1 { font-size:clamp(1.8rem,4vw,2.5rem); font-weight:700; color:white; letter-spacing:-0.03em; margin-bottom:0.5rem; }
+    .hero p { color:rgba(255,255,255,0.75); font-size:0.95rem; }
+    .wave { display:block; width:100%; margin-bottom:-2px; color:var(--bg); }
+    .container { max-width:740px; margin:0 auto; padding:2.5rem 1.5rem 4rem; }
+    .badge { display:inline-flex; align-items:center; gap:0.4rem; background:var(--teal-light); color:var(--teal-dark); font-size:0.78rem; font-weight:600; padding:0.35rem 0.85rem; border-radius:999px; margin-bottom:2rem; letter-spacing:0.03em; text-transform:uppercase; }
+    .intro-card { background:var(--surface); border:1px solid var(--border); border-left:4px solid var(--teal); border-radius:12px; padding:1.5rem 1.75rem; margin-bottom:2.5rem; color:var(--text-muted); font-size:0.97rem; }
+    .section { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:1.75rem; margin-bottom:1.25rem; transition:box-shadow 0.2s; }
+    .section:hover { box-shadow:0 4px 20px rgba(1,105,111,0.08); }
+    .section-header { display:flex; align-items:center; gap:0.85rem; margin-bottom:1.1rem; }
+    .section-icon { width:40px; height:40px; background:var(--teal-light); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .section-icon svg { width:20px; height:20px; color:var(--teal); }
+    .section h2 { font-size:1.05rem; font-weight:650; color:var(--text); }
+    .terms-list { list-style:none; display:flex; flex-direction:column; gap:0.6rem; }
+    .terms-list li { display:flex; align-items:flex-start; gap:0.75rem; font-size:0.94rem; color:var(--text-muted); padding:0.65rem 0.85rem; background:var(--bg); border-radius:8px; }
+    .terms-list li::before { content:""; display:block; width:7px; height:7px; background:var(--teal); border-radius:50%; margin-top:0.45rem; flex-shrink:0; }
+    .terms-list li strong { color:var(--text); font-weight:600; }
+    .section p { font-size:0.94rem; color:var(--text-muted); margin-bottom: 0.5rem; }
+    .section p:last-child { margin-bottom: 0; }
+    .contact-link { display:inline-flex; align-items:center; gap:0.5rem; color:var(--teal); font-weight:600; font-size:0.95rem; text-decoration:none; margin-top:0.5rem; padding:0.5rem 1rem; background:var(--teal-light); border-radius:8px; transition:background 0.2s; }
+    .contact-link:hover { background:#cde5e6; }
+    footer { text-align:center; padding:2rem 1rem; color:var(--text-muted); font-size:0.82rem; border-top:1px solid var(--border); }
+    @media(max-width:480px){ .hero{padding:2rem 1rem 3rem;} .container{padding:1.5rem 1rem 3rem;} }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="logo-wrap">
+      <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/742fd391-bd82-4ab1-b7cc-82f18a206416.png" alt="n8n Job Tracker Logo" class="logo-img">
+      <span class="logo-text">n8n Job Tracker</span>
+    </div>
+    <h1>Terms of Service</h1>
+    <p>Last updated: April 2026</p>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,48 C360,0 1080,0 1440,48 L1440,48 L0,48 Z" fill="currentColor"/>
+  </svg>
+  <div class="container">
+    <div class="badge">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Personal Use Only
+    </div>
+    <div class="intro-card">
+      By using this application, you agree to these terms. This app is a <strong>personal automation tool</strong> built for private use only and is not intended for public access.
+    </div>
+
+    <!-- Use of Service -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <h2>Use of Service</h2>
+      </div>
+      <ul class="terms-list">
+        <li><span>This application is intended for <strong>personal use only</strong> by the developer.</span></li>
+        <li><span>The app automates job application tasks including resume management, email sending, and data logging.</span></li>
+        <li><span>Unauthorized use, redistribution, or resale of this tool is <strong>strictly prohibited</strong>.</span></li>
+      </ul>
+    </div>
+
+    <!-- Google Services -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h2>Google Services Usage</h2>
+      </div>
+      <ul class="terms-list">
+        <li><span><strong>Google Drive & Docs</strong> — Used only to manage personal resume files.</span></li>
+        <li><span><strong>Google Sheets</strong> — Used only to log personal job application records.</span></li>
+        <li><span><strong>Gmail</strong> — Used only to send job applications on behalf of the developer.</span></li>
+        <li><span>All Google data is accessed in compliance with <strong>Google API Services User Data Policy</strong>.</span></li>
+      </ul>
+    </div>
+
+    <!-- Limitation of Liability -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <h2>Limitation of Liability</h2>
+      </div>
+      <p>This tool is provided "as is" without warranty of any kind. The developer is not responsible for any data loss, missed job applications, or unintended emails that may result from using this automation tool.</p>
+    </div>
+
+    <!-- Changes to Terms -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+        </div>
+        <h2>Changes to Terms</h2>
+      </div>
+      <p>These terms may be updated at any time. Continued use of the application constitutes acceptance of the revised terms. Last revision: April 2026.</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h2>Contact</h2>
+      </div>
+      <p>For any questions regarding these terms:</p>
+      <a href="mailto:devilizbusy@gmail.com" class="contact-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        devilizbusy@gmail.com
+      </a>
+    </div>
+
+  </div>
+  <footer>&copy; 2026 n8n Job Tracker &mdash; Personal Automation Tool</footer>
+</body>
+</html>
