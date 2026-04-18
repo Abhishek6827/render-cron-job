@@ -2,28 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy - n8n Job Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --teal: #01696f; --teal-light: #e6f2f2; --teal-dark: #0c4e54;
+      --text: #1a1a2e; --text-muted: #6b7280; --bg: #f8fafa;
+      --surface: #ffffff; --border: #e2e8ea;
+    }
+    body { font-family: "Inter", sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; line-height: 1.7; }
+    .hero { background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 60%, #1a8a91 100%); padding: 3rem 1.5rem 4rem; text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content:""; position:absolute; top:-60px; right:-60px; width:220px; height:220px; background:rgba(255,255,255,0.05); border-radius:50%; }
+    .hero::after  { content:""; position:absolute; bottom:-80px; left:-40px; width:300px; height:300px; background:rgba(255,255,255,0.04); border-radius:50%; }
+    .logo-wrap { display:inline-flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem; }
+    .logo-img { width:52px; height:52px; border-radius:14px; background:white; padding:6px; box-shadow:0 4px 16px rgba(0,0,0,0.2); }
+    .logo-text { font-size:1.4rem; font-weight:700; color:white; letter-spacing:-0.02em; }
+    .hero h1 { font-size:clamp(1.8rem,4vw,2.5rem); font-weight:700; color:white; letter-spacing:-0.03em; margin-bottom:0.5rem; }
+    .hero p { color:rgba(255,255,255,0.75); font-size:0.95rem; }
+    .wave { display:block; width:100%; margin-bottom:-2px; color:var(--bg); }
+    .container { max-width:740px; margin:0 auto; padding:2.5rem 1.5rem 4rem; }
+    .badge { display:inline-flex; align-items:center; gap:0.4rem; background:var(--teal-light); color:var(--teal-dark); font-size:0.78rem; font-weight:600; padding:0.35rem 0.85rem; border-radius:999px; margin-bottom:2rem; letter-spacing:0.03em; text-transform:uppercase; }
+    .intro-card { background:var(--surface); border:1px solid var(--border); border-left:4px solid var(--teal); border-radius:12px; padding:1.5rem 1.75rem; margin-bottom:2.5rem; color:var(--text-muted); font-size:0.97rem; }
+    .section { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:1.75rem; margin-bottom:1.25rem; transition:box-shadow 0.2s; }
+    .section:hover { box-shadow:0 4px 20px rgba(1,105,111,0.08); }
+    .section-header { display:flex; align-items:center; gap:0.85rem; margin-bottom:1.1rem; }
+    .section-icon { width:40px; height:40px; background:var(--teal-light); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .section-icon svg { width:20px; height:20px; color:var(--teal); }
+    .section h2 { font-size:1.05rem; font-weight:650; color:var(--text); }
+    .data-list { list-style:none; display:flex; flex-direction:column; gap:0.6rem; }
+    .data-list li { display:flex; align-items:flex-start; gap:0.75rem; font-size:0.94rem; color:var(--text-muted); padding:0.65rem 0.85rem; background:var(--bg); border-radius:8px; }
+    .data-list li::before { content:""; display:block; width:7px; height:7px; background:var(--teal); border-radius:50%; margin-top:0.45rem; flex-shrink:0; }
+    .data-list li strong { color:var(--text); font-weight:600; }
+    .section p { font-size:0.94rem; color:var(--text-muted); }
+    .contact-link { display:inline-flex; align-items:center; gap:0.5rem; color:var(--teal); font-weight:600; font-size:0.95rem; text-decoration:none; margin-top:0.5rem; padding:0.5rem 1rem; background:var(--teal-light); border-radius:8px; transition:background 0.2s; }
+    .contact-link:hover { background:#cde5e6; }
+    footer { text-align:center; padding:2rem 1rem; color:var(--text-muted); font-size:0.82rem; border-top:1px solid var(--border); }
+    @media(max-width:480px){ .hero{padding:2rem 1rem 3rem;} .container{padding:1.5rem 1rem 3rem;} }
+  </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>Last updated: April 2026</p>
-
-  <p>This app (n8n Job Tracker) is a personal automation tool 
-  built for private use only. It is not available to the public.</p>
-
-  <h2>Data We Access</h2>
-  <ul>
-    <li>Google Drive — to copy and manage resume files</li>
-    <li>Google Docs — to update resume content</li>
-    <li>Google Sheets — to log job application data</li>
-    <li>Gmail — to send job application emails</li>
-  </ul>
-
-  <h2>How We Use Data</h2>
-  <p>All data is used solely for personal job application 
-  automation. No data is shared with third parties.</p>
-
-  <h2>Contact</h2>
-  <p>devilizbusy@gmail.com</p>
+  <div class="hero">
+    <div class="logo-wrap">
+      <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/742fd391-bd82-4ab1-b7cc-82f18a206416.png" alt="n8n Job Tracker Logo" class="logo-img">
+      <span class="logo-text">n8n Job Tracker</span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: April 2026</p>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,48 C360,0 1080,0 1440,48 L1440,48 L0,48 Z" fill="currentColor"/>
+  </svg>
+  <div class="container">
+    <div class="badge">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Personal Use Only
+    </div>
+    <div class="intro-card">
+      This app is a <strong>personal automation tool</strong> built for private use only. It is not a public product and is not available to external users.
+    </div>
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h2>Data We Access</h2>
+      </div>
+      <ul class="data-list">
+        <li><span><strong>Google Drive</strong> — To copy and manage resume files</span></li>
+        <li><span><strong>Google Docs</strong> — To update resume content automatically</span></li>
+        <li><span><strong>Google Sheets</strong> — To log job application data</span></li>
+        <li><span><strong>Gmail</strong> — To send job application emails</span></li>
+      </ul>
+    </div>
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h2>How We Use Data</h2>
+      </div>
+      <p>All accessed data is used <strong>solely for personal job application automation</strong>. No data is stored on external servers, sold, or shared with any third parties under any circumstances.</p>
+    </div>
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h2>Contact</h2>
+      </div>
+      <p>For any questions regarding this privacy policy:</p>
+      <a href="mailto:devilizbusy@gmail.com" class="contact-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        devilizbusy@gmail.com
+      </a>
+    </div>
+  </div>
+  <footer>&copy; 2026 n8n Job Tracker &mdash; Personal Automation Tool</footer>
 </body>
 </html>
